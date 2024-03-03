@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(./images/images.jpg);
+    /* background: url(./images/ray-hennessy-xUUZcpQlqpM-unsplash.jpg);
+    background: url(./images/jase-bloor-oCZHIa1D4EU-unsplash.jpg);
+    background: url(./images/daniel-norin-lBhhnhndpE0-unsplash.jpg);
+    background: url(./images/fachry-zella-devandra-Yta-zdP9PVM-unsplash.jpg);
+    background: url(./images/jase-bloor-oCZHIa1D4EU-unsplash.jpg); */
+    /* background:url(images/emmanuel-denier-YiXsjwJKXmo-unsplash.jpg) no-repeat; */
+    background-size: cover;
+    background-position: center;
+}
+.wrapper{
+    width: 550px;
+    background-color: transparent;
+    border: 2px solid rgba(225,255,255,.4);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 10px rgba(0,0,0,.4);
+    color: #fff;
+    border-radius: 10px;
+    padding: 60px 40px;
+
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.input_box{
+    position: relative;
+width: 100%;
+height: 50px;
+/* background-color: salmon; */
+margin:30px 0;
+}
+
+.input_box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    /* outline: none; */
+    border: 2px solid rgba(255,255,255,.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    backdrop-filter: blur(25px);
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+    padding: 20px 45px 20px 20px ;
+}
+
+.input_box input::placeholder{
+   color: rgba(233, 222, 222, 0.7);
+}
+
+.input_box i{
+    position: absolute;
+    right: 20px;
+    top:50%;
+    transform: translateY(50%);
+    font-size: 20px;
+}
+
+.btn{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+.error{
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+    color: red;
+    font-size: 13px;
+    display: none;
+}
+.error-icon{
+    margin-right: 6px;
+    font-size: 15px;
+}
+
+.password-error{
+    margin-bottom: 25px;
+
+}
+.good{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    color:rgb(16, 216, 66);
+    font-size: 18px;
+    font-weight: 900;
+    display:none;
+
+}
+.invaild .error{
+    display: flex;
+}
